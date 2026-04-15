@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Room</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="glass-card chat-layout animate-fade-in">
+
+        <!-- Sidebar: Stats -->
+        <aside class="stats-panel glass-card" style="border: none; background: rgba(0,0,0,0.2);">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div style="font-size: 3rem;">🌾</div>
+                <h3>Agronomist<br>Dashboard</h3>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Location (Live)</div>
+                <div id="stat-location" class="stat-value">--</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Weather Now</div>
+                <div id="stat-weather" class="stat-value">--</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Analysed Crop</div>
+                <div id="stat-crop" class="stat-value" style="color: var(--accent-color);">--</div>
+            </div>
+
+            <button onclick="window.location.href='index.html'"
+                style="margin-top: auto; background: transparent; border: 1px solid var(--text-secondary); color: var(--text-secondary); padding: 10px; border-radius: 8px; cursor: pointer;">
+                ← Start New Analysis
+            </button>
+        </aside>
+
+        <!-- Main Chat -->
+        <main class="chat-panel">
+            <header class="chat-header">
+                <div>
+                    <h3 style="margin-bottom: 5px;">AI Consultant (Online 🟢)</h3>
+                    <small style="color: var(--text-secondary);">Expert in AP Agriculture • Market Prices • Soil
+                        Health</small>
+                </div>
+            </header>
+
+            <div id="chat-messages" class="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" class="chat-input"
+                    placeholder="Ask about price, fertilizer, or yield..." autofocus>
+                <button id="send-btn" class="btn-primary">Send 🚀</button>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
